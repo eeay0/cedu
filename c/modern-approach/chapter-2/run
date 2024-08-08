@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Run make to build the project
+make
+
+# Check if the last executable exists
+if [ -f build/last ]; then
+    # Make the last executable runnable
+    chmod +x build/last
+
+    # Run the last executable
+    ./build/last
+else
+    echo "Error: 'last' executable not found."
+fi
