@@ -7,7 +7,7 @@ make
 if [ -f build/last ]; then
     # Make the last executable runnable
     chmod +x build/last
-    printf "\nRunning Last\n"
+    printf "\nRunning Last\n\n\n"
 
     # Run the last executable
     ./build/last
